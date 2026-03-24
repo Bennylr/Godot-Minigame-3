@@ -54,8 +54,35 @@ func _add(a: int, b: int) -> int:
 func _playground() -> void:
 	# playground 1
 	var message = "Hello world!"
-	
+	print(message)
 
+	# playground 2
+	var seconds = 12.5
+	message = "seconds = %f" % seconds
+	print(message)
+
+	# playground 3 
+	message = "seconds = %.1f" % seconds
+	print(message)
+
+	# playground 4
+	var x = 1.0
+	var y = 3.4
+	var z = 20.5
+	message = "position = (%.1f, %.1f, %.1f)" % [x, y, z]
+	print(message)
+
+	# playground 6
+	var v1 = 4 
+	var v2 = 3
+	var sum_1_2 = _add(v1, v2)
+	print("sum: %s" % sum_1_2)
+
+	# playground 7
+	sum_1_2 = _add(10, 2)
+	print("second sum: %s" % sum_1_2)
+
+	
 # playground 8
 # put ya func here
 
